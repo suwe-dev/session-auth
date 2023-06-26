@@ -39,10 +39,12 @@ body {
     color: blanchedalmond;
     height: 90vh;
     width: 100vw;
+    position: relative;
 }
 
 .p-info {
-    margin-top: 2rem;
+    position: absolute;
+    top: 5%;
     width: 100vw;
     display: flex;
     align-items: center;
