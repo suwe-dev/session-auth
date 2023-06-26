@@ -1,0 +1,26 @@
+<%- include("../partials/header") %>
+
+<link rel="stylesheet" href="css/index.css">
+<section>
+    <h1><u>Explanation</u></h1>
+    <p class="text">This project demostrates the Authentication and Authorization with session.
+    Session is set to 1 hour, user access the service for 1 hour without logging in. However, On logging off, an user will lose their authentication access. 
+    </p>
+    <div>
+        <h3>Tech Stack</h3>
+        <ul>
+            <li>Express.js - Web Framework.</li>
+            <li>Mongodb - Database.</li>
+            <li>Passport.js - Authentication <br>
+                <b>Oauth</b> for Google and Github Authentication.
+            </li>
+            <li>EJS - Templating.</li>
+        </ul>
+    </div>
+    <h3>Click here to view the source code</h3>
+    <div class="src-code">
+        <a href="/home">Source Code</a>
+    </div>
+</section>
+
+<%- include("../partials/footer.ejs") %>

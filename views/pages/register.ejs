@@ -1,0 +1,34 @@
+<%- include("../partials/header") %>
+
+<link rel="stylesheet" href="css/register.css">
+
+<section>
+    <div class="cont">
+        <div class="title">Sign Up</div>
+        <form action="/register" method="post">
+            <div class="form-data">
+                <label for="username">E-mail</label>
+                <input type="email" name="username" id="email" placeholder="E-mail" required autocomplete="off">
+            </div>
+
+            <div class="form-data">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="fname" placeholder="Name" required autocomplete="off" autofocus>
+            </div>
+
+            <div class="form-data">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-data">
+                <button class="submit-btn" type="submit">Register</button>
+            </div>
+
+            <div class="form-data">Already have an account? <a class="login-btn" href="/login">Login</a></div>
+
+        </form>
+    </div>
+</section>
+
+<%- include("../partials/footer") %>

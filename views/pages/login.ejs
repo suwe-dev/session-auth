@@ -1,0 +1,38 @@
+<%- include("../partials/header") %>
+<link rel="stylesheet" href="css/login.css">
+<section>
+    <div class="cont">
+        <div class="title">
+            Login
+        </div>
+
+        <form action="/login" method="post">
+            <div class="form-data">
+                <div class="label">
+                    Email
+                </div>
+                <input type="email" name="username" id="email" placeholder="E-mail" required autocomplete="off">
+            </div>
+    
+            <div class="form-data">
+                <div class="label">
+                    Password
+                </div>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-data">
+                <button class="submit-btn" type="submit">Login</button>
+            </div>
+    
+            <div class="form-data">Didn't have an account yet?
+                <a class="signup-btn" href="/register">
+                    Sign Up
+                </a>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+<%- include("../partials/footer") %>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+header {
+    background: #2BAE66;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h3 a {
+    font-family: 'Kablammo', cursive;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FCF6F5;
+}
+
+nav a {
+    margin-right: 2rem;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: #FCF6F5;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background: #2BAE66;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .6rem;
+    color: #FCF6F5;
+}
+
+footer .mid {
+    font-size: .9rem;
+}
+
+section {
+    background: #FCF6F5;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont {
+    margin: 2rem;
+    background: rgb(43, 174, 102, 0.2);
+    width: 350px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.title {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.label {
+    margin-top: 1.5rem;
+}
+
+input {
+    display: block;
+    margin-top: 1rem;
+    border: none;
+    border-bottom: 2px solid #0B0C10 ;
+    width: 90%;
+    height: 20px;
+    background: none;
+    outline: none;
+    color: #0B0C10;
+}
+
+input::placeholder {
+    color: #0B0C10;
+    opacity: .4;
+}
+
+.submit-btn {
+    margin-top: 1.5rem;
+    border: none;
+    width: 100px;
+    height: 30px;
+    background: none;
+    color: #0B0C10;
+    border-radius: 5px;
+    border: .1rem solid #0B0C10;
+}
+
+.signup-btn {
+    color: #0B0C10;
+    margin-left: .3rem;
+    text-decoration-color: #0B0C10;
+}
+
+.form-data {
+    margin: 1rem;
+}
