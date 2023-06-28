@@ -2,7 +2,7 @@ const { Router } = require("express");
 const { Home, RegisterForm, LoginForm, Logout, Profile} = require("../controllers/getRoutes");
 const { Register } = require("../controllers/postRoutes");
 const passport = require("passport");
-const {isAuth, isLoggedIn} = require("../middlewares/isAuth");
+const {isAuth, isLoggedIn} = require("../middlewares/Auth");
 
 const router = Router();
 
