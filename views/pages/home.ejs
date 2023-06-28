@@ -13,10 +13,14 @@
     <div class="cont">
         <div class="info">
             <h2>Welcome,
-                <% if(user.name) { %>
-                    <%= user.name %>
+                <% if(user.provider === "github") { %>
+                    <%= user.givenName %>
                 <% } else{ %> 
-                    <%= user.displayName %>
+                    <% if(user.provider === "google") { %>
+                        <%= user.name.givenName %>
+                    <% } else { %>
+                        <%= user.name %>
+                        <% } %>
                 <% } %>
             </h2>
             <a href="/logout">Logout</a>
@@ -26,13 +30,27 @@
                 <div class="title">Personal Info</div>
                 <ul>
                     <li>Name: 
-                        <% if(user.name) { %>
-                            <%= user.name %>
+                        <% if(user.provider === "github") { %>
+                            <%= user.givenName %>
                         <% } else{ %> 
-                            <%= user.displayName %>
+                            <% if(user.provider === "google") { %>
+                                <%= user.name.givenName %>
+                            <% } else { %>
+                                <%= user.name %>
+                                <% } %>
                         <% } %>
                     </li>
-                    <li>Username: <%= user.username %> </li>
+                    <li>Username: 
+                        <% if(user.provider === "github") { %>
+                            <%= user.givenName %>
+                        <% } else{ %> 
+                            <% if(user.provider === "google") { %>
+                                <%= user.emails[0].value %>
+                            <% } else { %>
+                                <%= user.username %>
+                                <% } %>
+                        <% } %>
+                    </li>
                 </ul>
             </div>
         </div>

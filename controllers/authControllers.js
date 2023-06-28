@@ -35,8 +35,22 @@ const verifyGithubStrategy = async (accessToken, refreshToken, profile, cb) => {
     }
 }
 
-const verifyGoogleStrategy = () => {
-    
+const verifyGoogleStrategy = async (accessToken, refreshToken, profile, cb) => {
+    try {
+        const user = await User.findOne({google_id: profile.id});
+        if (!user) {
+            console.log("Adding a new google user")
+            const user  = await User({
+                username: profile.id,
+                name: profile.displayName,
+                google_id: profile.id
+            });
+            await user.save();
+        }
+            return cb(null, profile);
+        } catch (err) {
+            return cb(err, profile);
+    }
 }
 
 module.exports = { verifyLocalStrategy, verifyGithubStrategy, verifyGoogleStrategy}
