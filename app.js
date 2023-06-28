@@ -36,6 +36,7 @@ require("./config/passport");
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 app.use(routes);
 
 mongoose.set("strictQuery", false);

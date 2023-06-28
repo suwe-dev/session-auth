@@ -61,12 +61,22 @@ section {
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+}
+
+h1 {
+    margin-top: .3rem;
 }
 
 .text {
     text-align: center;
+    width: 70%;
+    margin-top: 0;
+}
+
+.info h3 {
+    margin-top: 0;
 }
 
 .src-code {

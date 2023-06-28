@@ -1,3 +1,4 @@
+const User = require("../models/Users");
 
 function Home(req,res) {
     res.render("pages/index");
@@ -18,7 +19,7 @@ function Logout(req, res) {
     });
 }
 
-function Profile(req, res) {
+async function Profile(req, res) {
     const user = req.user;
     res.render("pages/home", {user: user});
 }

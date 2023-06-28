@@ -57,8 +57,6 @@ section {
     background: #FCF6F5;
     width: 100%;
     height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,19 +75,80 @@ section {
 }
 
 .title {
-    margin: 1rem;
+    margin: .5rem;
     font-size: 1.5rem;
     font-weight: 700;
-    text-decoration: underline;
+}
+
+hr {
+    background: #0B0C10;
+    outline: none;
+    height: 1px;
+}
+
+.or {
+    font-weight: 700;
+}
+
+.oauth-con {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin-left: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FCF6F5;
+}
+
+a {
+    width: 70%;
+    text-decoration: none;
+}
+
+.google {
+    background: #4285F4;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github {
+    height: 40px;
+    background: #171515;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .label {
-    margin-top: 1.5rem;
+    margin-top: .5rem;
 }
 
 input {
     display: block;
-    margin-top: 1rem;
+    margin-top: .5rem;
     border: none;
     border-bottom: 2px solid #0B0C10 ;
     width: 90%;
@@ -105,7 +164,7 @@ input::placeholder {
 }
 
 .submit-btn {
-    margin-top: 1.5rem;
+    margin-top: .5rem;
     border: none;
     width: 100px;
     height: 30px;

@@ -20,7 +20,7 @@ async function Register(req,res) {
             }        
         });
     });
-}
+};
 
 function Login(req, res) {
     

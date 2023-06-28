@@ -13,7 +13,11 @@
     <div class="cont">
         <div class="info">
             <h2>Welcome,
-                <%= user.name %>
+                <% if(user.name) { %>
+                    <%= user.name %>
+                <% } else{ %> 
+                    <%= user.displayName %>
+                <% } %>
             </h2>
             <a href="/logout">Logout</a>
         </div>
@@ -21,8 +25,14 @@
             <div class="p-info">
                 <div class="title">Personal Info</div>
                 <ul>
-                    <li>Name: <%= user.name %> </li>
-                    <li>E-mail: <%= user.username %> </li>
+                    <li>Name: 
+                        <% if(user.name) { %>
+                            <%= user.name %>
+                        <% } else{ %> 
+                            <%= user.displayName %>
+                        <% } %>
+                    </li>
+                    <li>Username: <%= user.username %> </li>
                 </ul>
             </div>
         </div>

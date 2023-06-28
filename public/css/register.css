@@ -62,6 +62,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .cont {
@@ -77,15 +78,15 @@ section {
 }
 
 .title {
-    margin: .5rem;
     font-size: 1.5rem;
     font-weight: 700;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .form-data {
     margin: 1rem;
 }
-
 
 input {
     display: block;
@@ -99,19 +100,80 @@ input {
     color: #0B0C10;
 }
 
+hr {
+    background: #0B0C10;
+    outline: none;
+    height: 1px;
+}
+
+.or {
+    font-weight: 700;
+}
+
+.oauth-con {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin-left: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FCF6F5;
+}
+
+a {
+    width: 70%;
+    text-decoration: none;
+}
+
+.google {
+    background: #4285F4;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github {
+    height: 40px;
+    background: #171515;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 input::placeholder {
     color: #0B0C10;
     opacity: .4;
 }
 
 .submit-btn {
-    margin-top: .5rem;
     border: none;
     width: 100px;
     height: 30px;
     background: none;
     color: #0B0C10;
-    border-radius: 5px;
+    border-radius: 10px;
     border: .1rem solid #0B0C10;
 }
 
