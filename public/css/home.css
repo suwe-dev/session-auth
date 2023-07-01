@@ -14,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: .7rem;
     font-weight: 800;
     position: relative;
     color: burlywood;
@@ -43,14 +44,12 @@ body {
 }
 
 .p-info {
-    position: absolute;
-    top: 5%;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .title {
@@ -58,4 +57,16 @@ body {
     font-weight: 700;
     font-size: 2rem;
     text-decoration: underline;
+    margin-top: 1rem;
+}
+
+.src {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.src a {
+    text-decoration: none;
+    color: blanchedalmond;
 }

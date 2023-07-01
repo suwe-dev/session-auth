@@ -12,6 +12,7 @@ async function Register(req,res) {
                 const user = await User.create({
                     username: username,
                     name: name,
+                    email: username,
                     password: hash
                 });
                 res.redirect("/login");

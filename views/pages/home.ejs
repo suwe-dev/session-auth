@@ -13,15 +13,7 @@
     <div class="cont">
         <div class="info">
             <h2>Welcome,
-                <% if(user.provider === "github") { %>
-                    <%= user.givenName %>
-                <% } else{ %> 
-                    <% if(user.provider === "google") { %>
-                        <%= user.name.givenName %>
-                    <% } else { %>
-                        <%= user.name %>
-                        <% } %>
-                <% } %>
+                <%= user.name %>
             </h2>
             <a href="/logout">Logout</a>
         </div>
@@ -30,29 +22,18 @@
                 <div class="title">Personal Info</div>
                 <ul>
                     <li>Name: 
-                        <% if(user.provider === "github") { %>
-                            <%= user.givenName %>
-                        <% } else{ %> 
-                            <% if(user.provider === "google") { %>
-                                <%= user.name.givenName %>
-                            <% } else { %>
-                                <%= user.name %>
-                                <% } %>
-                        <% } %>
+                        <%= user.name %>
                     </li>
-                    <li>Username: 
-                        <% if(user.provider === "github") { %>
-                            <%= user.givenName %>
-                        <% } else{ %> 
-                            <% if(user.provider === "google") { %>
-                                <%= user.emails[0].value %>
-                            <% } else { %>
-                                <%= user.username %>
-                                <% } %>
-                        <% } %>
+                    <li>E-mail: 
+                        <%= user.email %>
                     </li>
                 </ul>
             </div>
+                <a href="https://github.com/suwe-dev/session-auth/" target="_blank">
+                    <div class="src">
+                        Source code
+                    </div>
+                </a>
         </div>
     </div>
 

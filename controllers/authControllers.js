@@ -29,9 +29,9 @@ const verifyGithubStrategy = async (accessToken, refreshToken, profile, cb) => {
             });
             await user.save();
         }
-            return cb(null, profile);
+            return cb(null, user);
         } catch (err) {
-            return cb(err, profile);
+            return cb(null, false);
     }
 }
 
@@ -43,13 +43,14 @@ const verifyGoogleStrategy = async (accessToken, refreshToken, profile, cb) => {
             const user  = await User({
                 username: profile.id,
                 name: profile.displayName,
+                email: profile.emails[0].value,
                 google_id: profile.id
             });
             await user.save();
         }
-            return cb(null, profile);
+            return cb(null, user);
         } catch (err) {
-            return cb(err, profile);
+            return cb(null, false);
     }
 }
 

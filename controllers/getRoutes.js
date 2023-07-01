@@ -21,6 +21,7 @@ function Logout(req, res) {
 
 async function Profile(req, res) {
     const user = req.user;
+    console.log(user)
     res.render("pages/home", {user: user});
 }
 
