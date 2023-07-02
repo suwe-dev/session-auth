@@ -85,12 +85,12 @@ section {
 }
 
 .form-data {
-    margin: 1rem;
+    margin: .8rem;
 }
 
 input {
     display: block;
-    margin-top: .5rem;
+    margin-top: .3rem;
     border: none;
     border-bottom: 2px solid #0B0C10 ;
     width: 90%;
